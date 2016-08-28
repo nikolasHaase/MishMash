@@ -9,23 +9,67 @@
 /* Begin PBXBuildFile section */
 		5142EBDB1D70CF5E00D5E5FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142EBDA1D70CF5E00D5E5FB /* main.m */; };
 		5142EBDE1D70CF5E00D5E5FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142EBDD1D70CF5E00D5E5FB /* AppDelegate.m */; };
-		5142EBE11D70CF5E00D5E5FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142EBE01D70CF5E00D5E5FB /* ViewController.m */; };
 		5142EBE41D70CF5E00D5E5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5142EBE21D70CF5E00D5E5FB /* Main.storyboard */; };
 		5142EBE61D70CF5E00D5E5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5142EBE51D70CF5E00D5E5FB /* Assets.xcassets */; };
 		5142EBE91D70CF5E00D5E5FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5142EBE71D70CF5E00D5E5FB /* LaunchScreen.storyboard */; };
+		5142EBF41D70DA2D00D5E5FB /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142EBF31D70DA2D00D5E5FB /* NSData+Encryption.m */; };
+		5142EBFE1D70DB4800D5E5FB /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5142EBF91D70DB4800D5E5FB /* AWSLambda.framework */; };
+		5142EBFF1D70DB4800D5E5FB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5142EBFA1D70DB4800D5E5FB /* Bolts.framework */; };
+		5142EC0A1D70DC1E00D5E5FB /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5142EBF81D70DB4800D5E5FB /* AWSDynamoDB.framework */; };
+		5142EC0B1D70DC1E00D5E5FB /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5142EBF81D70DB4800D5E5FB /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5142EC0D1D70DC2100D5E5FB /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5142EBF71D70DB4800D5E5FB /* AWSCore.framework */; };
+		5142EC0E1D70DC2100D5E5FB /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5142EBF71D70DB4800D5E5FB /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51688A261D71964A002CF802 /* loginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 51688A251D71964A002CF802 /* loginTextField.m */; };
+		51688A291D71A0B7002CF802 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51688A281D71A0B7002CF802 /* SignInViewController.m */; };
+		51688A2B1D71A29D002CF802 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51688A2A1D71A29D002CF802 /* QuartzCore.framework */; };
+		516F2D7E1D70DD5000F148FB /* AWSLambda.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5142EBF91D70DB4800D5E5FB /* AWSLambda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		516F2D811D70DE9A00F148FB /* updatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516F2D801D70DE9A00F148FB /* updatesViewController.m */; };
+		516F2D831D70DECE00F148FB /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516F2D821D70DECE00F148FB /* SignIn.storyboard */; };
+		516F2D871D70E60F00F148FB /* colorChangingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 516F2D861D70E60F00F148FB /* colorChangingView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5142EC0C1D70DC1E00D5E5FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				516F2D7E1D70DD5000F148FB /* AWSLambda.framework in Embed Frameworks */,
+				5142EC0B1D70DC1E00D5E5FB /* AWSDynamoDB.framework in Embed Frameworks */,
+				5142EC0E1D70DC2100D5E5FB /* AWSCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5142EBD61D70CF5E00D5E5FB /* MishMash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MishMash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5142EBDA1D70CF5E00D5E5FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5142EBDC1D70CF5E00D5E5FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5142EBDD1D70CF5E00D5E5FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5142EBDF1D70CF5E00D5E5FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5142EBE01D70CF5E00D5E5FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5142EBE31D70CF5E00D5E5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5142EBE51D70CF5E00D5E5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5142EBE51D70CF5E00D5E5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MishMash/Assets.xcassets; sourceTree = "<group>"; };
 		5142EBE81D70CF5E00D5E5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5142EBEA1D70CF5E00D5E5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5142EBEA1D70CF5E00D5E5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MishMash/Info.plist; sourceTree = "<group>"; };
+		5142EBF21D70DA2D00D5E5FB /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		5142EBF31D70DA2D00D5E5FB /* NSData+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encryption.m"; sourceTree = "<group>"; };
+		5142EBF61D70DB4800D5E5FB /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = sdks/AWSCognito.framework; sourceTree = "<group>"; };
+		5142EBF71D70DB4800D5E5FB /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = sdks/AWSCore.framework; sourceTree = "<group>"; };
+		5142EBF81D70DB4800D5E5FB /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = sdks/AWSDynamoDB.framework; sourceTree = "<group>"; };
+		5142EBF91D70DB4800D5E5FB /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSLambda.framework; path = sdks/AWSLambda.framework; sourceTree = "<group>"; };
+		5142EBFA1D70DB4800D5E5FB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = sdks/Bolts.framework; sourceTree = "<group>"; };
+		51688A241D71964A002CF802 /* loginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginTextField.h; sourceTree = "<group>"; };
+		51688A251D71964A002CF802 /* loginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginTextField.m; sourceTree = "<group>"; };
+		51688A271D71A0B7002CF802 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		51688A281D71A0B7002CF802 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		51688A2A1D71A29D002CF802 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		516F2D7F1D70DE9A00F148FB /* updatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = updatesViewController.h; sourceTree = "<group>"; };
+		516F2D801D70DE9A00F148FB /* updatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updatesViewController.m; sourceTree = "<group>"; };
+		516F2D821D70DECE00F148FB /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		516F2D851D70E60F00F148FB /* colorChangingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorChangingView.h; sourceTree = "<group>"; };
+		516F2D861D70E60F00F148FB /* colorChangingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = colorChangingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51688A2B1D71A29D002CF802 /* QuartzCore.framework in Frameworks */,
+				5142EBFE1D70DB4800D5E5FB /* AWSLambda.framework in Frameworks */,
+				5142EC0D1D70DC2100D5E5FB /* AWSCore.framework in Frameworks */,
+				5142EC0A1D70DC1E00D5E5FB /* AWSDynamoDB.framework in Frameworks */,
+				5142EBFF1D70DB4800D5E5FB /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +91,9 @@
 		5142EBCD1D70CF5E00D5E5FB = {
 			isa = PBXGroup;
 			children = (
+				5142EC001D70DB5100D5E5FB /* Frameworks */,
 				5142EBD81D70CF5E00D5E5FB /* MishMash */,
-				5142EBD71D70CF5E00D5E5FB /* Products */,
+				5142EBF11D70D3A700D5E5FB /* secondary */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,13 +110,11 @@
 			children = (
 				5142EBDC1D70CF5E00D5E5FB /* AppDelegate.h */,
 				5142EBDD1D70CF5E00D5E5FB /* AppDelegate.m */,
-				5142EBDF1D70CF5E00D5E5FB /* ViewController.h */,
-				5142EBE01D70CF5E00D5E5FB /* ViewController.m */,
+				516F2D7F1D70DE9A00F148FB /* updatesViewController.h */,
+				516F2D801D70DE9A00F148FB /* updatesViewController.m */,
 				5142EBE21D70CF5E00D5E5FB /* Main.storyboard */,
-				5142EBE51D70CF5E00D5E5FB /* Assets.xcassets */,
-				5142EBE71D70CF5E00D5E5FB /* LaunchScreen.storyboard */,
-				5142EBEA1D70CF5E00D5E5FB /* Info.plist */,
-				5142EBD91D70CF5E00D5E5FB /* Supporting Files */,
+				516F2D841D70DEDE00F148FB /* SignIn */,
+				5142EBF51D70DA3600D5E5FB /* encrypt */,
 			);
 			path = MishMash;
 			sourceTree = "<group>";
@@ -77,6 +125,55 @@
 				5142EBDA1D70CF5E00D5E5FB /* main.m */,
 			);
 			name = "Supporting Files";
+			path = MishMash;
+			sourceTree = "<group>";
+		};
+		5142EBF11D70D3A700D5E5FB /* secondary */ = {
+			isa = PBXGroup;
+			children = (
+				5142EBE51D70CF5E00D5E5FB /* Assets.xcassets */,
+				5142EBE71D70CF5E00D5E5FB /* LaunchScreen.storyboard */,
+				5142EBEA1D70CF5E00D5E5FB /* Info.plist */,
+				5142EBD71D70CF5E00D5E5FB /* Products */,
+				5142EBD91D70CF5E00D5E5FB /* Supporting Files */,
+			);
+			name = secondary;
+			sourceTree = "<group>";
+		};
+		5142EBF51D70DA3600D5E5FB /* encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				5142EBF21D70DA2D00D5E5FB /* NSData+Encryption.h */,
+				5142EBF31D70DA2D00D5E5FB /* NSData+Encryption.m */,
+			);
+			name = encrypt;
+			sourceTree = "<group>";
+		};
+		5142EC001D70DB5100D5E5FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51688A2A1D71A29D002CF802 /* QuartzCore.framework */,
+				5142EBF61D70DB4800D5E5FB /* AWSCognito.framework */,
+				5142EBF71D70DB4800D5E5FB /* AWSCore.framework */,
+				5142EBF81D70DB4800D5E5FB /* AWSDynamoDB.framework */,
+				5142EBF91D70DB4800D5E5FB /* AWSLambda.framework */,
+				5142EBFA1D70DB4800D5E5FB /* Bolts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		516F2D841D70DEDE00F148FB /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				516F2D821D70DECE00F148FB /* SignIn.storyboard */,
+				51688A271D71A0B7002CF802 /* SignInViewController.h */,
+				51688A281D71A0B7002CF802 /* SignInViewController.m */,
+				516F2D851D70E60F00F148FB /* colorChangingView.h */,
+				516F2D861D70E60F00F148FB /* colorChangingView.m */,
+				51688A241D71964A002CF802 /* loginTextField.h */,
+				51688A251D71964A002CF802 /* loginTextField.m */,
+			);
+			name = SignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +186,7 @@
 				5142EBD21D70CF5E00D5E5FB /* Sources */,
 				5142EBD31D70CF5E00D5E5FB /* Frameworks */,
 				5142EBD41D70CF5E00D5E5FB /* Resources */,
+				5142EC0C1D70DC1E00D5E5FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516F2D831D70DECE00F148FB /* SignIn.storyboard in Resources */,
 				5142EBE91D70CF5E00D5E5FB /* LaunchScreen.storyboard in Resources */,
 				5142EBE61D70CF5E00D5E5FB /* Assets.xcassets in Resources */,
 				5142EBE41D70CF5E00D5E5FB /* Main.storyboard in Resources */,
@@ -149,9 +248,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5142EBE11D70CF5E00D5E5FB /* ViewController.m in Sources */,
+				51688A291D71A0B7002CF802 /* SignInViewController.m in Sources */,
+				516F2D871D70E60F00F148FB /* colorChangingView.m in Sources */,
+				51688A261D71964A002CF802 /* loginTextField.m in Sources */,
 				5142EBDE1D70CF5E00D5E5FB /* AppDelegate.m in Sources */,
 				5142EBDB1D70CF5E00D5E5FB /* main.m in Sources */,
+				5142EBF41D70DA2D00D5E5FB /* NSData+Encryption.m in Sources */,
+				516F2D811D70DE9A00F148FB /* updatesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +275,7 @@
 				5142EBE81D70CF5E00D5E5FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = MishMash;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -263,6 +367,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sdks",
+				);
 				INFOPLIST_FILE = MishMash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MishMash.MishMash;
@@ -274,6 +382,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sdks",
+				);
 				INFOPLIST_FILE = MishMash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MishMash.MishMash;
@@ -300,6 +412,7 @@
 				5142EBEF1D70CF5E00D5E5FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
